@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script src="js2str.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+       
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        label{
+           margin-right: 4px;
+        }
+        input{
+            width: 200px;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 5PX 10px;
+            border: none;
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    
+     
+      <header>
+          <nav class="navbar navbar-expand-lg navbar-light bg-">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="logo (1).jpg" class="w-25 rounded-3" alt="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Главная</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="1str.html">Личный кабинет</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="2str.html">Регистрация</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="3str.html">Добавить объявление</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="4str.html">Поиск по объявлениям</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" list="pets" placeholder="Поиск" aria-label="Search">
+                  <button class="btn btn-primary" onclick="">Поиск</button>
+                  <datalist id="pets">
+                    <option value="Кошка">
+                    </option><option value="Собака">
+                    </option><option value="Корова">
+                    </option><option value="Крокодил">
+                    </option><option value="Сова">
+                  </option></datalist>
+                </form>
+              </div>
+            </div>
+          </nav>
+      </header>
+      
+     <h1> Регистрация</h1>
+   <form>
+    <label for="username"> Имя пользователя</label>
+    <input type="text" id="username" name="username" required>
+    <br>
+     <label for="email"> email:</label>
+     <input type="email" id="email" name="email" required>
+
+     <br> 
+     <label for="password"> Пароль:</label>
+     <input type="password" id="password" name="password" required>
+
+     <br>
+    <label for="confirm-password"> Подтвержение пароля</label>
+    <input type="password" id="password" name="confirm-password" required>
+    <br> 
+    <button type="submit"> Зарегистрироваться</button>
+   </form>
+      <footer class="border-bottom bg-primary">
+        <p class="text-white p-3">GET PET BACK © Copyright, 2022</p>
+        <p class="text-white p-3">Все права защищены</p>
+      </footer>
+      
+
+
+
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

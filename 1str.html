@@ -72,24 +72,80 @@
           </nav>
       </header>
       
-     <h1> Личный кабинет</h1>
-     <ul> 
-        <li> <a href="#"> Изменить профиль</a></li>
-        <li> <a href="#"> Изменить пароль</a></li>
-        <li> <a href="#"> Мои заказы</a></li>
-        <li> <a href="#"> Сообщения</a></li>
-        <li> <a href="index.html"> Выход</a></li>
-     </ul>
-      
-      <footer class="border-bottom bg-primary">
-        <p class="text-white p-3">GET PET BACK © Copyright, 2022</p>
-        <p class="text-white p-3">Все права защищены</p>
-      </footer>
-      
-
-
-
-
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    </header>  
+    <div class="text-center text-white bg-primary m-2">
+      <h1 class="text-center text-white bg-primary m-2">Личный кабинет</h1>
+  
+      <h2 class="text-center text-white bg-primary m-2">Информация о пользователе</h2>
+    </div>
+       <div class="container">
+      <p><strong>Имя:</strong> Иван Иванов</p>
+      <p><strong>Телефон:</strong> +79111234567  <button class="btn btn-primary me-2" onclick="">Изменить</button></p> 
+      <p><strong>Email:</strong> ivan.ivanov@example.com <button class="btn btn-primary me-2" onclick="">Изменить</button></p>
+      <p><strong>Дата регистрации:</strong> 2024-03-01</p>
+      <p><strong>Дней на сайте:</strong> 150</p>
+      <p><strong>Количество объявлений:</strong> 4</p>
+      <p><strong>Найденных животных:</strong> 2</p>
+      <h2 class=" text-white bg-primary">Найденные животных</h2>
+      <div class="d-flex flex-row flex-wrap">
+        <div class="d-flex flex-row flex-wrap border m-3 p-3" style="min-width: 300px; width: 30%;">
+          <img src="кошка.jpg" class="w-75" alt="рисунок животного">
+          <p class="w-50 text-primary" style="min-width: 250px;">id:</p>
+          <p class="w-50" style="min-width: 250px;">14</p>
+    
+          <p class="w-50 text-primary" style="min-width: 250px;">Вид животного:</p>
+          <p class="w-50" style="min-width: 250px;"> Кошка</p>
+    
+          <p class="w-50 text-primary" style="min-width: 300px;">Описание:</p>
+          <p class="w-50" style="min-width: 300px;">Потерялась кошка, пушистая, серая. Любит играть, ласковая.</p>
+    
+          <p class="w-50 text-primary" style="min-width: 300px;">Номер чипа:</p>
+          <p class="w-50" style="min-width: 300px;">ca-001-spb</p>
+    
+          <p class="w-50 text-primary" style="min-width: 300px;">Район:</p>
+          <p class="w-50" style="min-width: 300px;">Василиостровский</p>
+    
+          <p class="w-50 text-primary" style="min-width: 300px;">Дата:</p>
+          <p class="w-50" style="min-width: 300px;">24-03-2020</p>
+        </div>
+        <div class="d-flex flex-row flex-wrap border m-3 p-3" style="min-width: 300px; width: 30%;">
+          <img src="коза.jpeg" class="w-75" alt="рисунок животного">
+          <p class="w-50 text-primary" style="min-width: 250px;">id:</p>
+          <p class="w-50" style="min-width: 250px;">18</p>
+    
+          <p class="w-50 text-primary" style="min-width: 250px;">Вид животного:</p>
+          <p class="w-50" style="min-width: 250px;"> Коза</p>
+    
+          <p class="w-50 text-primary" style="min-width: 300px;">Описание:</p>
+          <p class="w-50" style="min-width: 300px;">Потерялась коза, последний раз видели в здании Московского вокзала
+            г. Санкт-Петербург. Коза белая, пуховая.</p>
+    
+          <p class="w-50 text-primary" style="min-width: 300px;">Номер чипа:</p>
+          <p class="w-50" style="min-width: 300px;">go-011-spb</p>
+    
+          <p class="w-50 text-primary" style="min-width: 300px;">Район:</p>
+          <p class="w-50" style="min-width: 300px;">Центральный</p>
+    
+          <p class="w-50 text-primary" style="min-width: 300px;">Дата:</p>
+          <p class="w-50" style="min-width: 300px;">14-03-2022</p>
+        </div>
+      </div>
+      <button id="logoutButton" class="btn btn-danger">Выйти</button>
+  </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    </main>
+    
+    <footer class="border-bottom bg-primary">
+      <p class="text-white p-3">GET PET BACK © Copyright, 2024</p>
+      <p class="text-white p-3">Все права защищены</p>
+    </footer>
+    
+    <!-- Дополнительный JavaScript; выберите один из двух! -->
+    
+    <!-- Вариант 1: Bootstrap в связке с Popper -->
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    <script src="script.js"></script> 
+      <script>
+          
+      </script></body>
 </html>
